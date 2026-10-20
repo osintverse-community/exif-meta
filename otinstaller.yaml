@@ -24,7 +24,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/exif-meta@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/exif-meta@sha256:9dae55edb5f31eb6685c23b0f6bcd987aaf9845cf54a2cd2647bcb7134181e0c
   platforms: [linux/amd64, linux/arm64]
   command: ["exif-meta", "{url}"]
   output_format: json

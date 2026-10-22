@@ -3,7 +3,7 @@
 schema: 1
 name: exif-meta
 namespace: osintverse-community
-version: 0.1.0
+version: 0.1.1
 summary: "Reads an online image or document's metadata with ExifTool: GPS, camera, authors, dates"
 readme: README.md
 license: MIT
@@ -24,7 +24,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/exif-meta@sha256:9dae55edb5f31eb6685c23b0f6bcd987aaf9845cf54a2cd2647bcb7134181e0c
+  image: ghcr.io/osintverse-community/exif-meta@sha256:d8c995f9c3c1a1d09ad0bea63b8286137b0e216584b8d8789fea7959e9848ec1
   platforms: [linux/amd64, linux/arm64]
   command: ["exif-meta", "{url}"]
   output_format: json
